@@ -1,0 +1,143 @@
+import styled from 'styled-components/macro'
+
+export const AppContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+`
+export const ResponsiveContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 20px;
+  @media screen and (min-width: 768px) {
+    width: 85%;
+    max-width: 1140px;
+  }
+`
+export const MemeGeneratorColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`
+export const Heading = styled.h1`
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #35469c;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    text-align: left;
+  }
+`
+
+export const FormAndMemeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+`
+export const MemeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-image: url(${props => props.backgroundImage});
+  background-size: cover;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    width: 48%;
+    margin-top: 90px;
+    margin-bottom: 20px;
+  }
+`
+
+export const TextContent = styled.p`
+  color: #ffffff;
+  font-size: ${props => props.activeFontSizeId}px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+`
+
+export const MemeGeneratorForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
+`
+
+export const CustomLabel = styled.label`
+  color: #7e858e;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 0px;
+`
+
+export const CustomInput = styled.input`
+  color: #5a7184;
+  background-color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  outline: none;
+`
+export const CustomSelect = styled.select`
+  color: #1e293b;
+  background-color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  outline: none;
+`
+export const CustomOption = styled.option`
+  font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+`
+export const GenerateButton = styled.button`
+  background-color: #35469c;
+  color: #ffffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+`
